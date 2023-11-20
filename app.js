@@ -9,9 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 const ip = "localhost";
 const controllers = require("./controllers/authControllers")
 const protect = require("./middleware/authenticate")
-const fs = require("fs");
-const util = require("util");
-const readFileAsync = util.promisify(fs.readFile);
 const mongoose = require("mongoose")
 const User = require("./models/accountsSchema");
 const cookieParser = require("cookie-parser");
