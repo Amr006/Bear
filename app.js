@@ -60,7 +60,7 @@ app.post("/save", protect , async(req, res, next) => {
   // console.log(data[0])
   // console.log(req.userId)
   const newData = await User.findByIdAndUpdate(req.userId , {Games : data} , {new : true})
-  // console.log(newData)
+  console.log(newData)
   res.render("test" , {data : data})
 
 });

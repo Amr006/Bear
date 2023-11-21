@@ -52,20 +52,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-let i = 0 ; 
+var i = 0 ; 
 let btn = document.getElementById("btn")
 let myAudio = document.getElementById("myAudio")
 let canvasdev = document.getElementById("canvas-container")
 function next(){
-    
+    console.log(i)
     const newData = data[i].split(".")[0]
     console.log(newData)
     myAudio.src = `${newData}.aac` ; 
     canvasdev.style.cssText=`
     background-image: url(${data[i]});
     `
-    if(i == data.length -1){
+    i++;
+    if(i == data.length){
         i = 0 ; 
     }
-    i++;
+  
 }
