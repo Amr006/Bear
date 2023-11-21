@@ -37,21 +37,22 @@
         </div>
     </nav>
     <div class="content">
-        <div class="bear">
-            <h1>اضغط على الدب لسماع شرح التمرين</h1>
-            <img src="bear.png" alt="" id="play" onclick="playAndPause()">
-            <audio src="1.aac" id="myAudio"></audio>
-        </div>
-        <div id="canvas-container">
-            <canvas id="drawing-canvas" width="500" height="500"></canvas>
-        </div>
-    
-    </div>
+      <div class="bear">
+          <h1>اضغط على الدب لسماع شرح التمرين</h1>
+          <img src="bear.png" alt="" id="play" onclick="playAndPause()">
+          <audio src="" id="myAudio"></audio>
+          <button id="btn" class="btn btn-primary" onclick="next()">الاختبار التالي</button>
+      </div>
+      <div id="canvas-container">
+          <canvas id="drawing-canvas" width="500" height="500"></canvas>
+      </div>
+
+  </div>
 
     <script>
       let data = <%- JSON.stringify(data) %>;
-      console.log("data")
-      console.log(data)
+      // console.log("data")
+      // console.log(data)
     </script>
     <script src="test.js">
       

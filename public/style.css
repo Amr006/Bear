@@ -67,3 +67,24 @@ body{
 .form input{
     margin: 35px;
 }
+.test{
+    position: absolute;
+    right: 50%;
+    bottom: 20%;
+    transform: translate(50% , 50%);
+    width: 50%;
+    height: 90%;
+}
+#canvas-container{
+    position: relative;
+    width: 30%;
+    height: 500px;
+    top: 50%;
+    right: 30%;
+    transform: translate(-20% , -30%);
+    background-color: red;
+    background-size: cover;
+}
+#drawing-canvas{
+    position: relative;
+}

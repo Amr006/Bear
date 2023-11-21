@@ -7,7 +7,8 @@ function playAndPause() {
         audio.pause();
     }
 }
-
+console.log("data")
+console.log(data)
 document.addEventListener('DOMContentLoaded', function() {
     // Get the canvas and its context
     var canvas = document.getElementById("drawing-canvas");
@@ -49,3 +50,22 @@ document.addEventListener('DOMContentLoaded', function() {
         isDrawing = false;
     }
 });
+
+
+let i = 0 ; 
+let btn = document.getElementById("btn")
+let myAudio = document.getElementById("myAudio")
+let canvasdev = document.getElementById("canvas-container")
+function next(){
+    
+    const newData = data[i].split(".")[0]
+    console.log(newData)
+    myAudio.src = `${newData}.aac` ; 
+    canvasdev.style.cssText=`
+    background-image: url(${data[i]});
+    `
+    if(i == data.length -1){
+        i = 0 ; 
+    }
+    i++;
+}
