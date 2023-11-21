@@ -37,7 +37,7 @@ function send() {
     .then(response => response.json())
     .then(responseData => {
       //console.log(responseData);
-      
+
     })
     .catch(error => {
       console.error('Error:', error);

@@ -84,7 +84,7 @@ const login = (req, res, next) => {
                 );
 
                 res.cookie("token", token, { httpOnly: true });
-                res.render("index");
+                res.redirect("/home");
                 // res.json({
                 //     message: 'login successfully !' ,
                 //     token:token

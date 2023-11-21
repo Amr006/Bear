@@ -1,13 +1,10 @@
 const jwt = require('jsonwebtoken')
 
-console.log("cookieToken1")
 
 const authenticate = (req,res,next) => {
-  console.log("cookieToken2")
 
     try {
         
-        console.log("cookieToken3")
         let cookieToken = req.cookies.token;
         
         

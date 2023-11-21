@@ -57,20 +57,20 @@ app.post("/register" , controllers.register)
 
 app.post("/save", protect , async(req, res, next) => {
   const data = req.body;
-  console.log(data[0])
-  console.log(req.userId)
+  // console.log(data[0])
+  // console.log(req.userId)
   const newData = await User.findByIdAndUpdate(req.userId , {Games : data} , {new : true})
-  console.log(newData)
-
+  // console.log(newData)
+  res.render("test" , {data : data})
 
 });
 
 app.get("/home" , protect , async(req,res,next) => {
 
   const userData = await User.findById(req.userId , "Games")
-  console.log(userData.Games)
+  // console.log(userData.Games)
   
-  // res.render("home" , {data : userData.Games})
+  res.render("test" , {data : userData.Games})
 }
 )
 
