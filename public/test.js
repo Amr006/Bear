@@ -68,5 +68,13 @@ function next(){
     if(i == data.length){
         i = 0 ; 
     }
-  
+    var canvas = document.getElementById("drawing-canvas");
+    var context = canvas.getContext("2d");
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+next()
+
+function clearCanvas() {
 }
