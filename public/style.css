@@ -115,7 +115,7 @@ body{
 #canvas-container{
     position: relative;
     width: 60%;
-    height: 1000px;
+    height: 1200px;
     transform: translate(-70% , -30%);
     background-color: red;
     background-size: cover;
