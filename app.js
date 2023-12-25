@@ -101,7 +101,7 @@ app.get("/feedback" , async(req,res) => {
   try{
     const data = await Comment.find() ;
 
-    return res.render("feedback" , {data : data})
+    return res.render("feedback" , {comments : data})
   }catch(err)
   {
 
