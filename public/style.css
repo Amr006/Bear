@@ -116,8 +116,8 @@ body{
     position: relative;
     width: 30%;
     height: 500px;
-    top: 5%;
-    right: 30%;
+    margin-top: -15%;
+    right: 40%;
     transform: translate(-20% , -30%);
     background-color: red;
     background-size: cover;
