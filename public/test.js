@@ -1,12 +1,3 @@
-function playAndPause() {
-    let audio = document.getElementById("myAudio");
-
-    if (audio.paused) {
-        audio.play();
-    } else {
-        audio.pause();
-    }
-}
 console.log("data")
 console.log(data)
 document.addEventListener('DOMContentLoaded', function() {

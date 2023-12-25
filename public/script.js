@@ -1,13 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-  let audio = document.getElementById("myAudio");
-  
-  if (audio) {
-      audio.autoplay = true;
-      audio.play()
-  } else {
-      console.error('Audio element not found');
-  }
-});
+var audioElement = document.createElement('audio');
+
+// Set attributes for the audio element
+audioElement.id = 'myAudio';
+audioElement.src = './happy.mp3';
+audioElement.autoplay=true ;
+document.body.appendChild(audioElement);
+console.log(audioElement);
+audioElement.play()
+setTimeout(()=>{
+audioElement.play()
+} , 1500 )
+console.log("test");
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slider-img');
 
@@ -22,7 +26,8 @@ function changeSlide(direction) {
     if(checkbox.checked){
         let active = document.getElementsByClassName("active")[0];
         flag = true ;
-        for(let i =0 ; i < 3 ; i ++){
+        for(let i =0 ; i < games.length ; i ++){
+          console.log(active);
             if(active.alt == games[i]){
                 flag = false;
                 break;
