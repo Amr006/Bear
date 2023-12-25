@@ -4,7 +4,6 @@
 }
 body{ 
     margin: 0;
-    background-color: #ff69bb;
 }
 .background-container {
     position: fixed;
@@ -116,7 +115,7 @@ body{
     position: relative;
     width: 30%;
     height: 500px;
-    top: 5%;
+    top: 50%;
     right: 30%;
     transform: translate(-20% , -30%);
     background-color: red;
