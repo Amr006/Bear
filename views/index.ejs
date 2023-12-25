@@ -50,15 +50,16 @@
                 </div>
             </div>
         </div>
-        
-        <div id="comments-container" class="animated col-12 mt-5 w-100">
-            <div id="comments-header">قول رايك 🥰</div>
-            <div id="comments-form">
-                <input type="text" id="name" placeholder="الاسم">
-                <textarea id="comment" placeholder="رايك"></textarea>
-                <button onclick="addComment()">ارسال</button>
-            </div>
-        </div>
+        <form action="/comment" method="POST">
+            <div id="comments-container" class="animated col-12 mt-5 w-100">
+                <div id="comments-header">قول رايك 🥰</div>
+                <div id="comments-form">
+                    <input type="text" id="name" placeholder="الاسم" name="name">
+                    <input id="comment" placeholder="رايك" name="comment" type="text"></input>
+                    <button onclick="addComment()">ارسال</button>
+                </div>
+            </div>    
+        </form>
 
         <div class="row mt-5">
             <div class="col-md-12 mt-5">
