@@ -70,8 +70,8 @@ function addComment() {
 
 var comments = test //data from amr 
 let names = [] 
-let comments = [] 
+let comment = [] 
 for(let i =0 ; i < comments.length ; i++ ){
 names.push(comments[i].name) ; 
-comments.push(comments[i].comment) ; 
+comment.push(comments[i].comment) ; 
 }
