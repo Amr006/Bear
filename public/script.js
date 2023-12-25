@@ -67,11 +67,3 @@ function addComment() {
       document.getElementById('name').value = '';
       document.getElementById('comment').value = '';
   }
-
-var comments = test //data from amr 
-let names = [] 
-let comment = [] 
-for(let i =0 ; i < comments.length ; i++ ){
-names.push(comments[i].name) ; 
-comment.push(comments[i].comment) ; 
-}

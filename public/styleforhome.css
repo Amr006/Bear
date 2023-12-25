@@ -170,7 +170,7 @@ button:hover {
     background-color: #2980b9;
 }
 
-.comment {
+.comment{
     padding: 15px;
     border-bottom: 1px solid #ccc;
 }
@@ -191,3 +191,17 @@ button:hover {
 .animated {
     animation: fadeIn 1s ease;
 }
+.name{
+    font-weight: 700;
+}
+.name , .commentat {
+    background-color: #ff1493;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 28px;
+}
+
+.contant:nth-child(odd) .name,
+.contant:nth-child(odd) .commentat{
+    background-color: #ff69bb;
+} 
