@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+  let audio = document.getElementById("myAudio");
+  
+  if (audio) {
+      audio.autoplay = true;
+      audio.play()
+  } else {
+      console.error('Audio element not found');
+  }
+});
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slider-img');
 
