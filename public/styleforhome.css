@@ -4,7 +4,6 @@
 }
 body{ 
     margin: 0;
-    background-color: #ff69bb;
 }
 .background-container {
     position: fixed;
@@ -114,9 +113,11 @@ body{
 }
 #canvas-container{
     position: relative;
-    width: 60%;
-    height: 1200px;
-    transform: translate(-70% , -30%);
+    width: 30%;
+    height: 500px;
+    top: 50%;
+    right: 30%;
+    transform: translate(-20% , -30%);
     background-color: red;
     background-size: cover;
 }
