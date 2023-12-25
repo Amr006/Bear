@@ -11,6 +11,8 @@ const controllers = require("./controllers/authControllers")
 const protect = require("./middleware/authenticate")
 const mongoose = require("mongoose")
 const User = require("./models/accountsSchema");
+const Comment = require("./models/commentsSchema");
+
 const cookieParser = require("cookie-parser");
 
 let data;
@@ -48,6 +50,7 @@ app.get("/addExam", async (req, res) => {
   res.render("addExam");
 });
 
+
 app.post("/login" , controllers.login)
 app.post("/register" , controllers.register)
 
@@ -74,3 +77,35 @@ app.get("/home" , protect , async(req,res,next) => {
 }
 )
 
+app.post("/comment" , async (req,res) => {
+  
+  const {name , comment} = req.body ;
+
+  const newComment = new Comment({
+    Name : name ,
+    Comment : comment ,
+  })
+
+  try{
+    await newComment.save();
+  }catch(err)
+  {
+
+  }
+
+}
+)
+
+app.get("/feedback" , async(req,res) => {
+
+  try{
+    const data = await Comment.find() ;
+
+    return res.render("feedback" , {data : data})
+  }catch(err)
+  {
+
+  }
+
+}
+)
