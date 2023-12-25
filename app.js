@@ -88,10 +88,10 @@ app.post("/comment" , async (req,res) => {
 
   try{
     await newComment.save();
-    return res.status(200) ;
+    return res.status(200).render("index") ;
   }catch(err)
   {
-    return res.status(404) ;
+    return res.status(404).render("index") ;
   }
 
 }
@@ -105,7 +105,7 @@ app.get("/feedback" , async(req,res) => {
     return res.render("feedback" , {comments : data})
   }catch(err)
   {
-    return res.status(404) ;
+    return res.status(404).render("feedback") ;
   }
 
 }
