@@ -33,6 +33,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/register">صنع حساب</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/feedback">ارائكم</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -45,6 +48,15 @@
                     <a class="col-md-5" href="/register"><button class="homeBTN col-12">معندكش حساب ؟</button></a>
                     <a class="col-md-5" href="/login"><button class="homeBTN col-12">تسجيل الدخول</button></a>
                 </div>
+            </div>
+        </div>
+        
+        <div id="comments-container" class="animated col-12 mt-5 w-100">
+            <div id="comments-header">قول رايك 🥰</div>
+            <div id="comments-form">
+                <input type="text" id="name" placeholder="الاسم">
+                <textarea id="comment" placeholder="رايك"></textarea>
+                <button onclick="addComment()">ارسال</button>
             </div>
         </div>
 

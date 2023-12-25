@@ -60,3 +60,18 @@ function send() {
     alert("تم التعديل") ;
   
 }
+
+function addComment() {
+  var name = document.getElementById('name').value;
+  var comment = document.getElementById('comment').value;
+      document.getElementById('name').value = '';
+      document.getElementById('comment').value = '';
+  }
+
+var comments = test //data from amr 
+let names = [] 
+let comments = [] 
+for(let i =0 ; i < comments.length ; i++ ){
+names.push(comments[i].name) ; 
+comments.push(comments[i].comment) ; 
+}
